@@ -4,27 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
     <title>Prototipo-Celulares</title>
 </head>
 <body>
-    <header>
-        <ul>
-            <li>Inicio</li>
-            <li>Celulares</li>
-            <li>Contactame</li>
+    <header class="header" id="header">
+        <ul class="navbar">
+            <li><a class="navbar-anchors" href="#header">Inicio</a></li>
+            <li><a class="navbar-anchors" href="#phones">Celulares</a></li>
+            <li><a class="navbar-anchors" href="#contact">Contactanos</a></li>
         </ul>
     </header>
-    <article>
+    <article class="phones" id="phones">
+        <h2 class="phones-title">Celulares</h2>
        <section  class="iphone">
-            <h3>Iphone</h3>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci, laborum! Quo laboriosam dolorem dolores voluptatem quidem, consequatur eius laborum, hic minus, expedita alias aliquid tempore repudiandae eum tenetur voluptatibus. Vel!</p>
-            <div>Iphone-CSS</div>
+           <div class="iphone-description">
+               <h3>Iphone</h3>
+               <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci, laborum! Quo laboriosam dolorem dolores voluptatem quidem, consequatur eius laborum, hic minus, expedita alias aliquid tempore repudiandae eum tenetur voluptatibus. Vel!</p>
+           </div>
+           <div class="iphone-css">Iphone-CSS</div>
        </section>
        <section class="sony">
             <h3>sony</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi quam deserunt sapiente veniam neque impedit delectus maiores repudiandae quidem iste voluptates adipisci vero doloribus pariatur assumenda, illo, ullam aliquam explicabo.</p>
             <div>Sony-CSS</div>
        </section> 
+    </article>
+    <article class="contact" id="contact">
+        <h3>Contactanos</h3>
+        <section class="social-media">
+            <a href="">Facebook-logo</a>
+            <a href="">Instagram-logo</a>
+        </section>
     </article>
 </body>
 </html>

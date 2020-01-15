@@ -1,0 +1,36 @@
+html, body{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: rgb(245, 245, 245);
+}
+
+.header{
+    background: rgb(157, 248, 255);
+    height: 5vh;
+}
+
+.navbar{
+    height: inherit;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 10vw;
+    margin-top: 0;
+    margin-bottom: 0;
+    list-style: none;
+}
+
+.navbar-anchors{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    margin-left: 9vw;
+}
+
+.phones-title{
+    text-align: center;
+    margin: 10vh 0;
+}
+
