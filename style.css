@@ -48,7 +48,21 @@ body{
 }
 
 .phonesCSS{
-    position: relative;
-    left: 15vw;
-    top: 10vh
+    margin-left: 2vw;
+}
+
+.iphone{
+    width: 200px;
+    height: 385px;
+    border: 3px rgb(182, 133, 27) solid;
+    border-radius: 20px;
+    background: black;
+}
+
+.iphoneScreen{
+    width: 185px;
+    height: 371px;
+    border-radius: 10px;
+    background: grey;
+    margin: 7px auto;
 }
