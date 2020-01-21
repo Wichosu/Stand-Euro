@@ -47,8 +47,11 @@ body{
     width: 50vw;
 }
 
-.phonesCSS{
-    margin-left: 2vw;
+/* IPHONE CSS*/
+
+.phonesCSS, .sonyCSS{
+    margin-left: 8vw;
+    margin-bottom: 15vh;
 }
 
 .iphone{
@@ -135,4 +138,35 @@ body{
     border-top-right-radius: 1px;
     border-bottom-right-radius: 1px;
     background: rgb(182, 133, 27);
+}
+
+/* SONY CSS */
+
+.sony{
+    width: 200px;
+    height: 370px;
+    background: rgb(0, 0, 0);
+    border-radius: 2px;
+}
+
+.sonyScreen{
+    position: relative;
+    width: 190px;
+    height: 300px;
+    background: rgb(32, 32, 32);
+    margin: 0 auto;
+    top: 52%;
+    transform: translateY(-50%);
+    overflow: hidden;
+}
+
+.sonyScreen::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: inherit;
+    height: inherit;
+    background: rgba(255, 255, 255, .2);
+    transform: skewX(135deg) translateX(90%);
 }
