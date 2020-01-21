@@ -100,11 +100,13 @@ body{
 }
 
 .iphoneVolume{
+    width: min-content;
     top: -90%;
     left: -2%;
 }
 
 .iphonePower{
+    width: min-content;
     top: -105%;
     left: 101%;
 }
