@@ -95,7 +95,8 @@ body{
     border-bottom-right-radius: 1500px;
 }
 
-.iphoneVolume, .iphonePower{
+.iphoneVolume, .iphonePower, .sonyVolume, .sonyPower{
+    width: min-content;
     margin: 0;
     padding: 0;
     position: relative;
@@ -103,13 +104,11 @@ body{
 }
 
 .iphoneVolume{
-    width: min-content;
     top: -90%;
     left: -2%;
 }
 
 .iphonePower{
-    width: min-content;
     top: -105%;
     left: 101%;
 }
@@ -202,4 +201,22 @@ body{
     height: 3px;
     border-radius: 50%;
     background: black;
+}
+
+.sonyLogo{
+    position: relative;
+    top: -78%;
+    left: 40%;
+    font-size: 0.7rem;
+    color: white;
+}
+
+.sonyVolume{
+    top: 110%;
+    left: 50%;
+}
+
+.sonyVolumeUp{
+    width: 20px;
+    height: 20px;
 }
