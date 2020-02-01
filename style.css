@@ -212,11 +212,23 @@ body{
 }
 
 .sonyVolume{
-    top: 110%;
-    left: 50%;
+    top: -70%;
+    left: 100%;
 }
 
-.sonyVolumeUp{
-    width: 20px;
+.sonyVolumeUpDown{
+    width: 2px;
+    height: 45px;
+    background: black;
+}
+
+.sonyPower{
+    top: -64%;
+    left: 100%;
+}
+
+.sonyPowerButton{
+    width: 2px;
     height: 20px;
+    background: black;
 }
