@@ -1,0 +1,14 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: whitesmoke;
+}
+
+.wrapper {
+  width: 85vw;
+  margin: 0 auto;
+}
+/*# sourceMappingURL=style.css.map */

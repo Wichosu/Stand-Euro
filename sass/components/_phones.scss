@@ -1,0 +1,14 @@
+.phones{
+    &__title{
+        text-align: center;
+        margin: 10vh 0;
+    }
+    
+    &__eachPhone{
+        display: flex;
+    }
+
+    &__description{
+        width: 50vw;
+    }
+}

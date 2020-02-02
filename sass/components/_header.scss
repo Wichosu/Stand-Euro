@@ -1,0 +1,21 @@
+.header{
+    background: rgb(157, 248, 255);
+    height: 5vh;
+    
+    &__navbar{
+        height: inherit;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        margin-right: 10vw;
+        margin-top: 0;
+        margin-bottom: 0;
+        list-style: none;
+    }
+
+    &__anchors{
+        text-decoration: none;
+        color: rgb(0, 0, 0);
+        margin-left: 9vw;
+    }
+}
