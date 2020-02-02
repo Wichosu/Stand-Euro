@@ -52,25 +52,44 @@
         position: relative;
         list-style: none;
         top: -90%;
-        left: -2%;
+        left: -3%;
     }
 
     &__up{
         margin: 9px 0;
-        width: 2px;
+        width: 3px;
         height: 20px;
         border-top-left-radius: 1px;
         border-bottom-left-radius: 1px;
         background: rgb(182, 133, 27);
+        transition: cubic-bezier(0.215, 0.610, 0.355, 1) .2s;
+
+        &:hover{
+            box-shadow: -1.5px 0px 10px 0.5px #3a3a3a;
+            cursor: pointer;
+        }
+
+        &:active{
+            transform: translateX(1px);
+        }
     }
 
     &__down{
         margin: 9px 0;
-        width: 2px;
+        width: 3px;
         height: 20px;
         border-top-left-radius: 1px;
         border-bottom-left-radius: 1px;
         background: rgb(182, 133, 27);
+
+        &:hover{
+            box-shadow: -1.5px 0px 10px 0.5px #3a3a3a;
+            cursor: pointer;
+        }
+
+        &:active{
+            transform: translateX(1px);
+        }
     }
 
     &__power{
@@ -84,10 +103,19 @@
     }
 
     &__button{
-        width: 2px;
+        width: 3px;
         height: 40px;
         border-top-right-radius: 1px;
         border-bottom-right-radius: 1px;
         background: rgb(182, 133, 27);
+
+        &:hover{
+            box-shadow: -1.5px 0px 10px 0.5px #3a3a3a;
+            cursor: pointer;
+        }
+
+        &:active{
+            transform: translateX(-1px);
+        }
     }
 }

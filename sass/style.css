@@ -112,25 +112,49 @@ body {
   position: relative;
   list-style: none;
   top: -90%;
-  left: -2%;
+  left: -3%;
 }
 
 .phones__up {
   margin: 9px 0;
-  width: 2px;
+  width: 3px;
+  height: 20px;
+  border-top-left-radius: 1px;
+  border-bottom-left-radius: 1px;
+  background: #b6851b;
+  -webkit-transition: cubic-bezier(0.215, 0.61, 0.355, 1) 0.2s;
+  transition: cubic-bezier(0.215, 0.61, 0.355, 1) 0.2s;
+}
+
+.phones__up:hover {
+  -webkit-box-shadow: -1.5px 0px 10px 0.5px #3a3a3a;
+          box-shadow: -1.5px 0px 10px 0.5px #3a3a3a;
+  cursor: pointer;
+}
+
+.phones__up:active {
+  -webkit-transform: translateX(1px);
+          transform: translateX(1px);
+}
+
+.phones__down {
+  margin: 9px 0;
+  width: 3px;
   height: 20px;
   border-top-left-radius: 1px;
   border-bottom-left-radius: 1px;
   background: #b6851b;
 }
 
-.phones__down {
-  margin: 9px 0;
-  width: 2px;
-  height: 20px;
-  border-top-left-radius: 1px;
-  border-bottom-left-radius: 1px;
-  background: #b6851b;
+.phones__down:hover {
+  -webkit-box-shadow: -1.5px 0px 10px 0.5px #3a3a3a;
+          box-shadow: -1.5px 0px 10px 0.5px #3a3a3a;
+  cursor: pointer;
+}
+
+.phones__down:active {
+  -webkit-transform: translateX(1px);
+          transform: translateX(1px);
 }
 
 .phones__power {
@@ -146,11 +170,22 @@ body {
 }
 
 .phones__button {
-  width: 2px;
+  width: 3px;
   height: 40px;
   border-top-right-radius: 1px;
   border-bottom-right-radius: 1px;
   background: #b6851b;
+}
+
+.phones__button:hover {
+  -webkit-box-shadow: -1.5px 0px 10px 0.5px #3a3a3a;
+          box-shadow: -1.5px 0px 10px 0.5px #3a3a3a;
+  cursor: pointer;
+}
+
+.phones__button:active {
+  -webkit-transform: translateX(-1px);
+          transform: translateX(-1px);
 }
 
 .phones__CSS--sony {
