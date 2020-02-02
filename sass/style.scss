@@ -11,3 +11,11 @@ body{
     width: 85vw;
     margin: 0 auto;
 }
+
+//*IMPORTS
+
+@import './components/header';
+@import './components/phones';
+@import './components/phones__iphone';
+@import './components/phones_sony';
+@import './components/contact'

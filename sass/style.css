@@ -11,4 +11,268 @@ body {
   width: 85vw;
   margin: 0 auto;
 }
+
+.header {
+  background: #9df8ff;
+  height: 5vh;
+}
+
+.header__navbar {
+  height: inherit;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 10vw;
+  margin-top: 0;
+  margin-bottom: 0;
+  list-style: none;
+}
+
+.header__anchors {
+  text-decoration: none;
+  color: black;
+  margin-left: 9vw;
+}
+
+.phones__title {
+  text-align: center;
+  margin: 10vh 0;
+}
+
+.phones__eachPhone {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.phones__description {
+  width: 50vw;
+}
+
+.phones__CSS {
+  margin-left: 8vw;
+  margin-bottom: 15vh;
+}
+
+.phones__iphone {
+  width: 200px;
+  height: 385px;
+  border: 3px #b6851b solid;
+  border-radius: 20px;
+  background: black;
+}
+
+.phones__screen {
+  position: relative;
+  width: 185px;
+  height: 371px;
+  border-radius: 10px;
+  background: #202020;
+  margin: 7px auto;
+  overflow: hidden;
+}
+
+.phones__screen::before {
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(255, 255, 255, 0.2);
+  -webkit-transform: skewX(160deg) translateX(-70%);
+          transform: skewX(160deg) translateX(-70%);
+}
+
+.phones__inner {
+  position: relative;
+  top: -100%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  background: black;
+  width: 120px;
+  height: 20px;
+  border-bottom-left-radius: 1500px;
+  border-bottom-right-radius: 1500px;
+}
+
+.phones__volume {
+  width: -webkit-min-content;
+  width: -moz-min-content;
+  width: min-content;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  list-style: none;
+  top: -90%;
+  left: -2%;
+}
+
+.phones__up {
+  margin: 9px 0;
+  width: 2px;
+  height: 20px;
+  border-top-left-radius: 1px;
+  border-bottom-left-radius: 1px;
+  background: #b6851b;
+}
+
+.phones__down {
+  margin: 9px 0;
+  width: 2px;
+  height: 20px;
+  border-top-left-radius: 1px;
+  border-bottom-left-radius: 1px;
+  background: #b6851b;
+}
+
+.phones__power {
+  width: -webkit-min-content;
+  width: -moz-min-content;
+  width: min-content;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  list-style: none;
+  top: -105%;
+  left: 101%;
+}
+
+.phones__button {
+  width: 2px;
+  height: 40px;
+  border-top-right-radius: 1px;
+  border-bottom-right-radius: 1px;
+  background: #b6851b;
+}
+
+.phones__CSS--sony {
+  margin-left: 8vw;
+  margin-bottom: 15vh;
+}
+
+.phones__sony {
+  width: 200px;
+  height: 370px;
+  background: black;
+  border-radius: 2px;
+}
+
+.phones__screen--sony {
+  position: relative;
+  width: 190px;
+  height: 300px;
+  background: #202020;
+  margin: 0 auto;
+  top: 52%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  overflow: hidden;
+}
+
+.phones__screen--sony::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: inherit;
+  height: inherit;
+  background: rgba(255, 255, 255, 0.2);
+  -webkit-transform: skewX(135deg) translateX(90%);
+          transform: skewX(135deg) translateX(90%);
+}
+
+.phones__inner--sony {
+  position: relative;
+  top: -81%;
+  left: 37%;
+  width: 50px;
+  height: 3px;
+  border-bottom-right-radius: 3px;
+  border-bottom-left-radius: 3px;
+  background: #5a5a5a;
+}
+
+.phones__inner--sony::before {
+  content: '';
+  position: absolute;
+  top: 220%;
+  left: -40%;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: grey;
+}
+
+.phones__inner--sony::after {
+  content: '';
+  position: absolute;
+  top: 290%;
+  left: -35%;
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  background: black;
+}
+
+.phones__logo {
+  position: relative;
+  top: -78%;
+  left: 40%;
+  font-size: 0.7rem;
+  color: white;
+}
+
+.phones__volume--sony {
+  width: -webkit-min-content;
+  width: -moz-min-content;
+  width: min-content;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  list-style: none;
+  top: -70%;
+  left: 100%;
+}
+
+.phones__upDown {
+  width: 2px;
+  height: 45px;
+  background: black;
+}
+
+.phones__power--sony {
+  width: -webkit-min-content;
+  width: -moz-min-content;
+  width: min-content;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  list-style: none;
+  top: -64%;
+  left: 100%;
+}
+
+.phones__button--sony {
+  width: 2px;
+  height: 20px;
+  background: black;
+}
+
+.contact {
+  background: #4cc291;
+}
+
+.contact__title {
+  text-align: center;
+  margin: 0;
+  padding: 30px 0;
+}
 /*# sourceMappingURL=style.css.map */

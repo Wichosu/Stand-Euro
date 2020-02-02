@@ -74,6 +74,11 @@
     }
 
     &__power{
+        width: min-content;
+        margin: 0;
+        padding: 0;
+        position: relative;
+        list-style: none;
         top: -105%;
         left: 101%;
     }

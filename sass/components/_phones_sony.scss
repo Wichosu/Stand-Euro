@@ -1,4 +1,9 @@
 .phones{
+    &__CSS--sony{
+        margin-left: 8vw;
+        margin-bottom: 15vh;
+    }
+
     &__sony{
         width: 200px;
         height: 370px;
@@ -70,6 +75,11 @@
     }
 
     &__volume--sony{
+        width: min-content;
+        margin: 0;
+        padding: 0;
+        position: relative;
+        list-style: none;
         top: -70%;
         left: 100%;
     }
@@ -81,6 +91,11 @@
     }
 
     &__power--sony{
+        width: min-content;
+        margin: 0;
+        padding: 0;
+        position: relative;
+        list-style: none;
         top: -64%;
         left: 100%;
     }
