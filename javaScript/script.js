@@ -1,10 +1,16 @@
-const phonesButton = document.querySelector('.phones__button')
+const phonesPower = document.querySelector('.phones__power')
+const phonesScreen = document.querySelector('.phones__screen')
 
+console.log(phonesPower, phonesScreen)
 
-phones.Button.addEventListener('click', unlockScreen)
+phonesPower.addEventListener('click', unlock)
 
-console.log(phonesButton)
-
-function unlockScreen (){
-    
+function unlock(){
+    if(phonesScreen.classList.contains('active')){
+        phonesScreen.classList.remove('active')
+    }
+    else{
+        phonesScreen.classList.add('active')
+        console.log(phonesPower, phonesScreen)
+    }
 }
