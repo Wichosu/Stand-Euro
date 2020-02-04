@@ -5,6 +5,10 @@ console.log(phonesPower, phonesScreen)
 
 phonesPower.addEventListener('click', unlock)
 
+while(phonesScreen.classList.contains('active')){
+    phonesScreen.addEventListener()
+}
+
 function unlock(){
     if(phonesScreen.classList.contains('active')){
         phonesScreen.classList.remove('active')
