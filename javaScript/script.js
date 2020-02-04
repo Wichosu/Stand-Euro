@@ -12,9 +12,10 @@ while(phonesScreen.classList.contains('active')){
 function unlock(){
     if(phonesScreen.classList.contains('active')){
         phonesScreen.classList.remove('active')
+        console.log(phonesScreen.classList)
     }
     else{
         phonesScreen.classList.add('active')
-        console.log(phonesPower, phonesScreen)
+        console.log(phonesScreen.classList)
     }
 }

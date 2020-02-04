@@ -34,6 +34,10 @@
 
         &.active{
             background-image: url(../../img/iphone-background.jfif);
+
+            &::before{
+                content: none;
+            }
         }
     }
 
@@ -86,11 +90,28 @@
         padding: 0;
         position: relative;
         list-style: none;
-        top: -90%;
+        top: -83%;
         left: -3%;
     }
 
-    &__up{
+    &__silence{
+        margin-bottom: 18px;
+        width: 3px;
+        height: 20px;
+        background: rgb(182, 133, 27);
+        transition: cubic-bezier(0.215, 0.610, 0.355, .2s);
+
+        &:hover{
+            box-shadow: -1.5px 0px 10px 0.5px #3a3a3a;
+            cursor: pointer;
+        }
+
+        &:active{
+            transform: translateX(1px);
+        }
+    }
+
+    &__up, &__down{
         margin: 9px 0;
         width: 3px;
         height: 20px;
@@ -109,23 +130,7 @@
         }
     }
 
-    &__down{
-        margin: 9px 0;
-        width: 3px;
-        height: 20px;
-        border-top-left-radius: 1px;
-        border-bottom-left-radius: 1px;
-        background: rgb(182, 133, 27);
 
-        &:hover{
-            box-shadow: -1.5px 0px 10px 0.5px #3a3a3a;
-            cursor: pointer;
-        }
-
-        &:active{
-            transform: translateX(1px);
-        }
-    }
 
     &__power{
         width: min-content;
@@ -133,7 +138,7 @@
         padding: 0;
         position: relative;
         list-style: none;
-        top: -105%;
+        top: -95%;
         left: 101%;
     }
 
@@ -143,6 +148,7 @@
         border-top-right-radius: 1px;
         border-bottom-right-radius: 1px;
         background: rgb(182, 133, 27);
+        transition: cubic-bezier(0.215, 0.610, 0.355, .2s);
 
         &:hover{
             box-shadow: -1.5px 0px 10px 0.5px #3a3a3a;

@@ -94,6 +94,10 @@ body {
   background-image: url(../../img/iphone-background.jfif);
 }
 
+.phones__screen.active::before {
+  content: none;
+}
+
 .phones__inner {
   position: relative;
   top: -100%;
@@ -146,11 +150,31 @@ body {
   padding: 0;
   position: relative;
   list-style: none;
-  top: -90%;
+  top: -83%;
   left: -3%;
 }
 
-.phones__up {
+.phones__silence {
+  margin-bottom: 18px;
+  width: 3px;
+  height: 20px;
+  background: #b6851b;
+  -webkit-transition: cubic-bezier(0.215, 0.61, 0.355, 0.2s);
+  transition: cubic-bezier(0.215, 0.61, 0.355, 0.2s);
+}
+
+.phones__silence:hover {
+  -webkit-box-shadow: -1.5px 0px 10px 0.5px #3a3a3a;
+          box-shadow: -1.5px 0px 10px 0.5px #3a3a3a;
+  cursor: pointer;
+}
+
+.phones__silence:active {
+  -webkit-transform: translateX(1px);
+          transform: translateX(1px);
+}
+
+.phones__up, .phones__down {
   margin: 9px 0;
   width: 3px;
   height: 20px;
@@ -161,33 +185,13 @@ body {
   transition: cubic-bezier(0.215, 0.61, 0.355, 1) 0.2s;
 }
 
-.phones__up:hover {
+.phones__up:hover, .phones__down:hover {
   -webkit-box-shadow: -1.5px 0px 10px 0.5px #3a3a3a;
           box-shadow: -1.5px 0px 10px 0.5px #3a3a3a;
   cursor: pointer;
 }
 
-.phones__up:active {
-  -webkit-transform: translateX(1px);
-          transform: translateX(1px);
-}
-
-.phones__down {
-  margin: 9px 0;
-  width: 3px;
-  height: 20px;
-  border-top-left-radius: 1px;
-  border-bottom-left-radius: 1px;
-  background: #b6851b;
-}
-
-.phones__down:hover {
-  -webkit-box-shadow: -1.5px 0px 10px 0.5px #3a3a3a;
-          box-shadow: -1.5px 0px 10px 0.5px #3a3a3a;
-  cursor: pointer;
-}
-
-.phones__down:active {
+.phones__up:active, .phones__down:active {
   -webkit-transform: translateX(1px);
           transform: translateX(1px);
 }
@@ -200,7 +204,7 @@ body {
   padding: 0;
   position: relative;
   list-style: none;
-  top: -105%;
+  top: -95%;
   left: 101%;
 }
 
@@ -210,6 +214,8 @@ body {
   border-top-right-radius: 1px;
   border-bottom-right-radius: 1px;
   background: #b6851b;
+  -webkit-transition: cubic-bezier(0.215, 0.61, 0.355, 0.2s);
+  transition: cubic-bezier(0.215, 0.61, 0.355, 0.2s);
 }
 
 .phones__button:hover {
