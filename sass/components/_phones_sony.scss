@@ -82,12 +82,34 @@
         list-style: none;
         top: -70%;
         left: 100%;
+        cursor: pointer;
     }
 
-    &__upDown{
-        width: 2px;
-        height: 45px;
+    &__up--sony, &__down--sony{
+        width: 3px;
+        height: 22px;
         background: black;
+        transition: cubic-bezier(0.215, 0.610, 0.355, 1) .2s;
+
+        &:hover{
+            box-shadow: -1.5px 0px 10px 0.5px #3a3a3a;
+        }
+
+        &:active{
+            transform: translateX(-1px);
+        }
+    }
+
+    &__up--sony{
+        &:active{
+            transform: skewX(2deg);
+        }
+    }
+
+    &__down--sony{
+        &:active{
+            transform: skewX(-2deg);
+        }
     }
 
     &__power--sony{
@@ -98,11 +120,21 @@
         list-style: none;
         top: -64%;
         left: 100%;
+        cursor: pointer;
     }
 
     &__button--sony{
-        width: 2px;
+        width: 3px;
         height: 20px;
         background: black;
+        transition: cubic-bezier(0.215, 0.610, 0.355, 1) .2s;
+        
+        &:hover{
+            box-shadow: -1.5px 0px 10px 0.5px #3a3a3a;
+        }
+
+        &:active{
+            transform: translateX(-1px);
+        }
     }
 }

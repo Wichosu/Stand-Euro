@@ -316,12 +316,35 @@ body {
   list-style: none;
   top: -70%;
   left: 100%;
+  cursor: pointer;
 }
 
-.phones__upDown {
-  width: 2px;
-  height: 45px;
+.phones__up--sony, .phones__down--sony {
+  width: 3px;
+  height: 22px;
   background: black;
+  -webkit-transition: cubic-bezier(0.215, 0.61, 0.355, 1) 0.2s;
+  transition: cubic-bezier(0.215, 0.61, 0.355, 1) 0.2s;
+}
+
+.phones__up--sony:hover, .phones__down--sony:hover {
+  -webkit-box-shadow: -1.5px 0px 10px 0.5px #3a3a3a;
+          box-shadow: -1.5px 0px 10px 0.5px #3a3a3a;
+}
+
+.phones__up--sony:active, .phones__down--sony:active {
+  -webkit-transform: translateX(-1px);
+          transform: translateX(-1px);
+}
+
+.phones__up--sony:active {
+  -webkit-transform: skewX(2deg);
+          transform: skewX(2deg);
+}
+
+.phones__down--sony:active {
+  -webkit-transform: skewX(-2deg);
+          transform: skewX(-2deg);
 }
 
 .phones__power--sony {
@@ -334,12 +357,25 @@ body {
   list-style: none;
   top: -64%;
   left: 100%;
+  cursor: pointer;
 }
 
 .phones__button--sony {
-  width: 2px;
+  width: 3px;
   height: 20px;
   background: black;
+  -webkit-transition: cubic-bezier(0.215, 0.61, 0.355, 1) 0.2s;
+  transition: cubic-bezier(0.215, 0.61, 0.355, 1) 0.2s;
+}
+
+.phones__button--sony:hover {
+  -webkit-box-shadow: -1.5px 0px 10px 0.5px #3a3a3a;
+          box-shadow: -1.5px 0px 10px 0.5px #3a3a3a;
+}
+
+.phones__button--sony:active {
+  -webkit-transform: translateX(-1px);
+          transform: translateX(-1px);
 }
 
 .contact {
