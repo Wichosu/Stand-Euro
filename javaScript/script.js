@@ -13,6 +13,8 @@ console.log(phonesPower, phonesScreen, phonesPowerSony, phonesScreenSony)
 
 phonesPower.addEventListener('click', unlock)
 
+phonesPowerSony.addEventListener('click', unlock(phonesScreenSony))
+
 //
 // ─── VOLUME ANIMATIONS??? ───────────────────────────────────────────────────────
 //
