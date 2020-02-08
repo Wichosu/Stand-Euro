@@ -31,6 +31,16 @@
             background: rgba(255, 255, 255, .2);
             transform: skewX(135deg) translateX(90%);
         }
+
+        &.active{
+            background-image: url(../../img/iphone__background.jfif);
+            background-repeat: no-repeat;
+            background-size: cover;
+
+            &::before{
+                content: none;
+            }
+        }
     }
 
     &__inner--sony{

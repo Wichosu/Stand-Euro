@@ -91,7 +91,7 @@ body {
 }
 
 .phones__screen.active {
-  background-image: url(../../img/iphone-background.jfif);
+  background-image: url(../../img/iphone__background.jfif);
 }
 
 .phones__screen.active::before {
@@ -263,6 +263,16 @@ body {
   background: rgba(255, 255, 255, 0.2);
   -webkit-transform: skewX(135deg) translateX(90%);
           transform: skewX(135deg) translateX(90%);
+}
+
+.phones__screen--sony.active {
+  background-image: url(../../img/iphone__background.jfif);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.phones__screen--sony.active::before {
+  content: none;
 }
 
 .phones__inner--sony {

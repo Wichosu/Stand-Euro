@@ -13,7 +13,7 @@ console.log(phonesPower, phonesScreen, phonesPowerSony, phonesScreenSony)
 
 phonesPower.addEventListener('click', unlock)
 
-phonesPowerSony.addEventListener('click', unlock(phonesScreenSony))
+phonesPowerSony.addEventListener('click', unlockSony)
 
 //
 // ─── VOLUME ANIMATIONS??? ───────────────────────────────────────────────────────
@@ -35,5 +35,14 @@ function unlock(){
     else{
         phonesScreen.classList.add('active')
         console.log(phonesScreen.classList)
+    }
+}
+
+function unlockSony(){
+    if(phonesScreenSony.classList.contains('active')){
+        phonesScreenSony.classList.remove('active')
+    }
+    else{
+        phonesScreenSony.classList.add('active')
     }
 }
