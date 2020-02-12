@@ -1,5 +1,7 @@
+$contactBackground: rgb(64, 182, 184);
+
 .contact{
-    background: rgb(76, 194, 145);
+    background: $contactBackground;
 
     &__title{
         text-align: center;

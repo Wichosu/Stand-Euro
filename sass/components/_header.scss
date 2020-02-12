@@ -1,5 +1,7 @@
+$headerBackground: rgb(157, 248, 255);
+
 .header{
-    background: rgb(157, 248, 255);
+    background: $headerBackground;
     height: 5vh;
     
     &__navbar{

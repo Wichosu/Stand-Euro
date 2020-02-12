@@ -1,10 +1,12 @@
+$bodyBackground: rgb(245, 245, 245);
+
 html, body{
     margin: 0;
     padding: 0;
 }
 
 body{
-    background: rgb(245, 245, 245);
+    background: $bodyBackground;
 }
 
 .wrapper{
