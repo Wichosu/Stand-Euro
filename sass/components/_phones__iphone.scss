@@ -33,7 +33,8 @@
         }
 
         &.active{
-            background-image: url(../../img/iphone__background.jfif);
+            background-image: url(../../img/waterfall.jpg);
+            background-size: cover;
 
             &::before{
                 content: none;
