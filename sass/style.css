@@ -8,7 +8,7 @@ body {
 }
 
 .wrapper {
-  width: 85vw;
+  width: 100vw;
   margin: 0 auto;
 }
 
@@ -55,9 +55,15 @@ body {
   width: 50vw;
 }
 
-.phones__CSS {
-  margin-left: 8vw;
-  margin-bottom: 15vh;
+.phones {
+  overflow: hidden;
+}
+
+.phones__eachPhone {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 50px 0;
 }
 
 .phones__iphone {
@@ -230,9 +236,10 @@ body {
           transform: translateX(-1px);
 }
 
-.phones__CSS--sony {
-  margin-left: 8vw;
-  margin-bottom: 15vh;
+.phones__eachPhone {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .phones__sony {

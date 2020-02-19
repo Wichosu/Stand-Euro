@@ -2,15 +2,18 @@ $caseBackground: rgb(182, 133, 27);
 $buttonShadow: #3a3a3a;
 $iphoneBackground: black;
 $screenBackground: rgb(32, 32, 32);
-$screenReflexBackground: rgb(255, 255, 255, .2);
+$screenReflexBackground: rgba(255, 255, 255, .2);
 $cameraGlassBackground: rgb(51, 51, 51);
 $cameraBackground: rgb(1, 28, 63);
 $speakerBackground: rgb(54, 54, 54);
 
 .phones{
-    &__CSS{
-        margin-left: 8vw;
-        margin-bottom: 15vh;
+
+    overflow: hidden;
+
+    &__eachPhone{
+        justify-content: center;
+        margin: 50px 0;
     }
 
     &__iphone{
