@@ -12,9 +12,27 @@ body {
   margin: 0 auto;
 }
 
+.burger {
+  position: absolute;
+  top: 10vh;
+  left: 20vw;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  color: green;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.burger::after {
+  width: 30px;
+  color: blue;
+}
+
 .header {
   background: #9df8ff;
-  height: 5vh;
+  height: 8vh;
 }
 
 .header__navbar {
@@ -35,9 +53,62 @@ body {
 }
 
 .header__anchors {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
   text-decoration: none;
   color: black;
   margin-left: 9vw;
+  -webkit-transition: cubic-bezier(0.215, 0.61, 0.355, 1) 0.2s;
+  transition: cubic-bezier(0.215, 0.61, 0.355, 1) 0.2s;
+  font-family: Helvetica;
+  border-radius: 2px;
+}
+
+.header__anchors:hover {
+  color: black;
+  -webkit-transform: translateX(-3px);
+          transform: translateX(-3px);
+  -webkit-box-shadow: 3px 2px 2px 0px;
+          box-shadow: 3px 2px 2px 0px;
+}
+
+.header__anchors:active {
+  -webkit-transform: translateX(3px);
+          transform: translateX(3px);
+  -webkit-box-shadow: 0px 0px 0px 0px;
+          box-shadow: 0px 0px 0px 0px;
+}
+
+@media screen and (max-width: 375px) {
+  .header {
+    display: none;
+  }
+}
+
+.info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.info__text {
+  width: 900px;
+  text-align: justify;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+@media screen and (max-width: 375px) {
+  .info__text {
+    width: 280px;
+    font-size: 1rem;
+  }
 }
 
 .phones__title {

@@ -1,9 +1,12 @@
 $headerBackground: rgb(157, 248, 255);
+$anchorsColor: black;
+$anchorsColorHover: black;
 
 .header{
     background: $headerBackground;
-    height: 5vh;
-    
+    height: 8vh;
+
+
     &__navbar{
         height: inherit;
         display: flex;
@@ -16,8 +19,29 @@ $headerBackground: rgb(157, 248, 255);
     }
 
     &__anchors{
+        display: flex;
+        width: fit-content;
         text-decoration: none;
-        color: rgb(0, 0, 0);
+        color: $anchorsColor;
         margin-left: 9vw;
+        transition: cubic-bezier(0.215, 0.610, 0.355, 1) .2s;
+        font-family: Helvetica;
+        border-radius: 2px;
+
+        &:hover{
+            color: $anchorsColorHover;
+            transform: translateX(-3px);
+            box-shadow: 3px 2px 2px 0px;
+        }
+
+        &:active{
+            transform: translateX(3px);
+            box-shadow: 0px 0px 0px 0px;
+        }
+
+    }
+
+     @media screen and (max-width: 375px){
+         display:none;
     }
 }
