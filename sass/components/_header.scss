@@ -5,8 +5,6 @@ $anchorsColorHover: black;
 .header{
     background: $headerBackground;
     height: 8vh;
-
-
     &__navbar{
         height: inherit;
         display: flex;
@@ -41,7 +39,4 @@ $anchorsColorHover: black;
 
     }
 
-     @media screen and (max-width: 375px){
-         display:none;
-    }
 }
