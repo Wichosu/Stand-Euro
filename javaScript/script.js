@@ -6,7 +6,9 @@ const phonesScreen = document.querySelector('.phones__screen')
 const phonesPowerSony = document.querySelector('.phones__power--sony')
 const phonesScreenSony = document.querySelector('.phones__screen--sony')
 const burger = document.querySelector('.burger')
-    
+const header = document.querySelector('.header')
+const anchors = document.querySelectorAll('.header__anchors')
+
 console.log(phonesPower, phonesScreen, phonesPowerSony, phonesScreenSony)
 
 phonesPower.addEventListener('click', unlock)
@@ -14,14 +16,23 @@ phonesPower.addEventListener('click', unlock)
 phonesPowerSony.addEventListener('click', unlockSony)
 
 burger.addEventListener('click', open)
+console.log(anchors.length)
+
+for(let i = 0; i < anchors.length; i++){
+    console.log("hello")
+    anchors[i].addEventListener('click', open)
+}
 
 //
-// ─── FUNCTIONS FOR BOTH PHONES CLASSES ──────────────────────────────────────────
+// ─── FUNCTIONS  ──────────────────────────────────────────
 //
 
 function open(){
-    if(burger.classList.contains('active')){
-
+    if(header.classList.contains('active')){
+        header.classList.remove('active')
+    }
+    else{
+        header.classList.add('active')
     }
 }
     
