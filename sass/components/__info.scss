@@ -1,7 +1,6 @@
 .info{
     display: flex;
     justify-content: center;
-    
     &__text{
         width: 900px;
         text-align: justify;
@@ -9,7 +8,7 @@
 
         @media screen and (max-width: 375px){
             width: 280px;
-            font-size: 1rem;
+            font-size: 0.9rem;
         }
     }
 }

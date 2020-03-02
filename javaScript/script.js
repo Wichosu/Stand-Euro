@@ -1,13 +1,11 @@
 //
-// ─── IPHONE VARIABLES ───────────────────────────────────────────────────────────
+// ─── VARIABLES ───────────────────────────────────────────────────────────
 //
 const phonesPower = document.querySelector('.phones__power')
 const phonesScreen = document.querySelector('.phones__screen')
-//
-// ─── SONY VARIABLES ─────────────────────────────────────────────────────────────
-//
 const phonesPowerSony = document.querySelector('.phones__power--sony')
 const phonesScreenSony = document.querySelector('.phones__screen--sony')
+const burger = document.querySelector('.burger')
     
 console.log(phonesPower, phonesScreen, phonesPowerSony, phonesScreenSony)
 
@@ -15,17 +13,17 @@ phonesPower.addEventListener('click', unlock)
 
 phonesPowerSony.addEventListener('click', unlockSony)
 
-//
-// ─── VOLUME ANIMATIONS??? ───────────────────────────────────────────────────────
-//
-
-// while(phonesScreen.classList.contains('active')){
-//     phonesScreen.addEventListener()
-// }
+burger.addEventListener('click', open)
 
 //
 // ─── FUNCTIONS FOR BOTH PHONES CLASSES ──────────────────────────────────────────
 //
+
+function open(){
+    if(burger.classList.contains('active')){
+
+    }
+}
     
 function unlock(){
     if(phonesScreen.classList.contains('active')){

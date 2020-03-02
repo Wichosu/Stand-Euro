@@ -14,7 +14,29 @@ body {
 
 .header {
   background: #9df8ff;
-  height: 8vh;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+@media screen and (max-width: 375px) {
+  .header {
+    position: fixed;
+    left: 100vw;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    -webkit-transition: cubic-bezier(0.215, 0.61, 0.355, 1) 2s;
+    transition: cubic-bezier(0.215, 0.61, 0.355, 1) 2s;
+  }
+  .header.active {
+    -webkit-transform: translateX(-100vw);
+            transform: translateX(-100vw);
+  }
 }
 
 .header__navbar {
@@ -34,6 +56,12 @@ body {
   list-style: none;
 }
 
+@media screen and (max-width: 375px) {
+  .header__navbar {
+    display: block;
+  }
+}
+
 .header__anchors {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -48,6 +76,12 @@ body {
   transition: cubic-bezier(0.215, 0.61, 0.355, 1) 0.2s;
   font-family: Helvetica;
   border-radius: 2px;
+}
+
+@media screen and (max-width: 375px) {
+  .header__anchors {
+    margin: 125px auto;
+  }
 }
 
 .header__anchors:hover {
@@ -83,7 +117,7 @@ body {
 @media screen and (max-width: 375px) {
   .info__text {
     width: 280px;
-    font-size: 1rem;
+    font-size: 0.9rem;
   }
 }
 
