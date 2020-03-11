@@ -10,7 +10,7 @@ $anchorsColorHover: black;
     top: 0;
     z-index: 1;
 
-    @media screen and (max-width: 375px){
+    @media screen and (max-width: 769px){
         position: fixed;
         left: 100vw;
         top: 0;
@@ -33,7 +33,7 @@ $anchorsColorHover: black;
         margin-bottom: 0;
         list-style: none;
 
-        @media screen and (max-width: 375px){
+        @media screen and (max-width: 769px){
             display: block;
         }
     }
@@ -48,7 +48,7 @@ $anchorsColorHover: black;
         font-family: Helvetica;
         border-radius: 2px;
 
-        @media screen and (max-width: 375px){
+        @media screen and (max-width: 769px){
             margin: 125px auto;
         }
 
