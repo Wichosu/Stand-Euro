@@ -35,9 +35,10 @@
         }
 
         &.active{
-            background-image: url(../../img/Light-Rays-Sunset.svg);
-            background-size: cover;
-            
+            background-image: url(../../img/coffee-sign.svg);
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
             &::before{
                 content: none;
             }

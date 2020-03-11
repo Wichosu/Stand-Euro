@@ -45,8 +45,10 @@ $speakerBackground: rgb(54, 54, 54);
         }
 
         &.active{
-            background-image: url(../../img/Sunset-On-The-Beach.svg);
-            background-size: cover;
+            background-image: url(../../img/Turn-coffee-into-code.svg);
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
 
             &::before{
                 content: none;

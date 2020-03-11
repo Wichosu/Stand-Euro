@@ -205,8 +205,10 @@ body {
 }
 
 .phones__screen.active {
-  background-image: url(../../img/Sunset-On-The-Beach.svg);
-  background-size: cover;
+  background-image: url(../../img/Turn-coffee-into-code.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .phones__screen.active::before {
@@ -382,8 +384,10 @@ body {
 }
 
 .phones__screen--sony.active {
-  background-image: url(../../img/Light-Rays-Sunset.svg);
-  background-size: cover;
+  background-image: url(../../img/coffee-sign.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .phones__screen--sony.active::before {
