@@ -4,7 +4,7 @@ export default function StandCard({ img, route, children}){
 
   return (
     <div 
-      className="relative max-w-sm bg-black rounded shadow-xl
+      className="relative max-w-xs w-3/4 bg-black rounded shadow-xl
       overflow-hidden text-neutral-200 hover:text-neutral-50 
       transition-all ease-in"
     >
