@@ -22,7 +22,7 @@ export default function Home() {
       </StandCard>
       <StandCard 
         img={'https://kinikmx.com/img/paneles-solares.png'} 
-        route={''}
+        route={'https://www.kinik.com.mx/'}
       >
         servicios kinik
       </StandCard>

@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Page(){
   return (
     <>
@@ -42,6 +44,9 @@ export default function Page(){
             En resumen, nuestra Urna Electrónica es el futuro de la democracia. Estamos comprometidos en proporcionar soluciones innovadoras que impulsen la participación ciudadana y garanticen elecciones justas y seguras.
           </p>
         </article>
+        <Link href='/' className="bg-blue-500 rounded text-neutral-200 w-fit px-4 py-2">
+          Regresar
+        </Link>
       </section>
     </>
   )
