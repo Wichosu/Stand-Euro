@@ -14,7 +14,7 @@ export default function StandCard({ img, route, children}){
         <img 
           src={img} 
           alt={img} 
-          className="w-full opacity-40 hover:opacity-30 transition-all
+          className="w-full h-56 opacity-40 hover:opacity-30 transition-all
           object-cover" 
         />
         <span className="absolute top-1/2 left-0 right-0 mx-auto w-fit 
