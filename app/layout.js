@@ -12,7 +12,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={`${inter.className} bg-neutral-200`}>
-        <main className='flex flex-col items-center gap-14 my-8'>
+        <main className='flex flex-col items-center gap-14 my-8 w-3/4 mx-auto'>
           {children}
         </main>
       </body>

@@ -16,7 +16,7 @@ export default function Home() {
       </h1>
       <StandCard 
         img={'https://www.revistasinrecreo.com/wp-content/uploads/2022/06/BOLETIN-068-1.jpeg'} 
-        route={''}
+        route={'/urna-electronica'}
       >
         urna electrónica
       </StandCard>
