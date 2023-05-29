@@ -15,7 +15,7 @@ export default function Home() {
         foro día del ingeniero 2023
       </h1>
       <StandCard 
-        img={'https://www.revistasinrecreo.com/wp-content/uploads/2022/06/BOLETIN-068-1.jpeg'} 
+        img={'https://www.oplever.org.mx/wp-content/uploads/2018/08/logo-ople.jpg'}
         route={'/urna-electronica'}
       >
         urna electrónica
